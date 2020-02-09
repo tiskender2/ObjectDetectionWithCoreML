@@ -13,6 +13,7 @@
 		833E218123F0195700887A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833E217F23F0195700887A52 /* Main.storyboard */; };
 		833E218323F0195900887A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833E218223F0195900887A52 /* Assets.xcassets */; };
 		833E218623F0195900887A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833E218423F0195900887A52 /* LaunchScreen.storyboard */; };
+		833E218E23F01E0800887A52 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 833E218D23F01E0800887A52 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		833E218223F0195900887A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		833E218523F0195900887A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		833E218723F0195900887A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		833E218D23F01E0800887A52 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		833E217823F0195700887A52 /* ObjectDetectionWithCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				833E218F23F01E0F00887A52 /* CoreMLModel */,
 				833E217923F0195700887A52 /* AppDelegate.swift */,
 				833E217B23F0195700887A52 /* SceneDelegate.swift */,
 				833E217D23F0195700887A52 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				833E218723F0195900887A52 /* Info.plist */,
 			);
 			path = ObjectDetectionWithCoreML;
+			sourceTree = "<group>";
+		};
+		833E218F23F01E0F00887A52 /* CoreMLModel */ = {
+			isa = PBXGroup;
+			children = (
+				833E218D23F01E0800887A52 /* Resnet50.mlmodel */,
+			);
+			path = CoreMLModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				833E217E23F0195700887A52 /* ViewController.swift in Sources */,
 				833E217A23F0195700887A52 /* AppDelegate.swift in Sources */,
+				833E218E23F01E0800887A52 /* Resnet50.mlmodel in Sources */,
 				833E217C23F0195700887A52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4E69GH98L;
 				INFOPLIST_FILE = ObjectDetectionWithCoreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4E69GH98L;
 				INFOPLIST_FILE = ObjectDetectionWithCoreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
